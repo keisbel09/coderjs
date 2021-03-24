@@ -19,13 +19,32 @@
     </body>
     <script>
         let nombreIngresado = prompt ("Nombre");
-        let apellidoIngresado = prompt("Apellido")
-        let calculosueldo = parseInt( prompt(" Dias laburados"));
-        
+        let apellidoIngresado = prompt("Apellido");
 
         console.log(nombreIngresado);
-        alert("Hola " + nombreIngresado +" " + apellidoIngresado);
-        alert ( "Tu salario es de" +  " " + ( calculosueldo * 1000));
+    
+        alert("¡Hola, " + nombreIngresado +" " + apellidoIngresado + "! soy Calculator");
+        
+        let diaslaburados = parseInt( prompt( nombreIngresado + ", vamos a calcular tu salario, ingresa tus dias laburados"));
+
+        if (diaslaburados > 0) {    
+            alert ( "Tu salario es de : $" + ( diaslaburados * 1000))
+        }
+
+        else
+            alert("Debes ingresar un numero mayor 0");
+        
+
+    
+
+
+        
+        
+        
+
+        
+
+        
     </script> 
-    <script src="js/app.js"></script>
+    
 </html>
