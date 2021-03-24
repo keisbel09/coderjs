@@ -17,33 +17,6 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     </body>
-    <script>
-        let nombreIngresado = prompt ("Nombre");
-        let apellidoIngresado = prompt("Apellido");
-
-        console.log(nombreIngresado);
-    
-        alert("¡Hola, " + nombreIngresado +" " + apellidoIngresado + "! soy Calculator");
-        
-        let diaslaburados = parseInt( prompt( nombreIngresado + ", vamos a calcular tu salario de este mes, ingresa tus dias laburados"));
-
-        if ((diaslaburados > 0) && (diaslaburados <31 )) {    
-            alert ( "Tu salario es de : $" + ( diaslaburados * 1000))
-        }
-    
-        else if(diaslaburados >31) {
-            alert( "error, un mes no tiene mas de 31 dias; por favor ingresa un dato valido");
-        }
-
-        else if(diaslaburados != "") {
-            alert( nombreIngresado +", debes ingresar un valor numerico");
-        }
-    
-        else{
-            alert("Debes ingresar un numero mayor 0");
-        }
-    </script> 
-
     <script src="js/miarchivo.js"></script>
     
 </html>
